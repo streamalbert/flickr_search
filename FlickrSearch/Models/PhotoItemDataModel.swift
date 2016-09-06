@@ -23,6 +23,7 @@ class PhotoItemDataModel {
             serverID = json["server"].string,
             imageID = json["id"].string,
             imageSecret = json["secret"].string {
+            // image URL formatting: https://www.flickr.com/services/api/misc.urls.html
             let imageURL = "https://farm\(farmID).staticflickr.com/\(serverID)/\(imageID)_\(imageSecret)_"
             imageURLThumbnail = imageURL + "n.jpg"
             imageURLHighRes = imageURL + "b.jpg"

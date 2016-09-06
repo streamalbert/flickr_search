@@ -24,7 +24,11 @@ class DataServiceManager {
         // This API fails ofter because of the wrong JSON parsing. http://stackoverflow.com/q/38601572
         // http://api.flickr.com/services/feeds/photos_public.gne?tags=cats&lang=en-us&format=json&nojsoncallback=1
 
-//        https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e41f8d6643979ad7e23054a952d74ec2&tags=cat&per_page=20&format=json&nojsoncallback=1
+        // https://www.flickr.com/services/api/flickr.photos.search.html
+        // https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e41f8d6643979ad7e23054a952d74ec2&tags=cat&per_page=20&format=json&nojsoncallback=1
+        // Tutorial 1: http://www.techrepublic.com/blog/software-engineer/build-your-own-ios-flickr-app-part-1/
+        // Tutorial 2: http://www.codemag.com/article/1507081
+        // Example: http://stackoverflow.com/questions/5563828/parsing-json-feeds-into-iphone
         let url = "https://api.flickr.com/services/rest"
         let params: [String: AnyObject] = [
             "method": "flickr.photos.search",

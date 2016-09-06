@@ -38,13 +38,6 @@ class ImageSearchViewController: UIViewController {
 
         configInfiniteScrolling()
     }
-
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-
-        
-    }
-
 }
 
 // MARK: - Private Extension

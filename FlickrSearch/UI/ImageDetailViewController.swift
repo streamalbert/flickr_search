@@ -40,11 +40,6 @@ class ImageDetailViewController: UIViewController {
         scrollView.maximumZoomScale = 2.0;
     }
 
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if hasPopulatedData {
@@ -54,7 +49,7 @@ class ImageDetailViewController: UIViewController {
 
         titleLabel.text = photoItem.title
         if let imageURL = photoItem.imageURLHighRes, url = NSURL(string: imageURL) {
-            
+
             Shared.imageCache.fetch(URL: url).onSuccess({ image in
                 let imageWidth = CGRectGetWidth(self.view.bounds)
                 let imageHeight = imageWidth * image.size.height / image.size.width
@@ -62,7 +57,6 @@ class ImageDetailViewController: UIViewController {
                 self.imageViewHeightConstraint.constant = imageHeight
                 self.scrollViewHeightConstraint.constant = imageHeight
                 self.scrollView.contentSize = CGSize(width: imageWidth, height: imageHeight)
-                self.view.layoutIfNeeded()
                 self.imageView.image = image
             })
         }
