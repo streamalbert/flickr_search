@@ -1,0 +1,19 @@
+PODS:
+  - Alamofire (3.4.2)
+  - HanekeSwift (0.10.1)
+  - SwiftyJSON (2.3.2)
+  - UIScrollView-InfiniteScroll (0.9.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - HanekeSwift
+  - SwiftyJSON
+  - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  UIScrollView-InfiniteScroll: 14e204c50ca4040467e1cbfa141dad7a18919b56
+
+COCOAPODS: 0.39.0
